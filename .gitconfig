@@ -1,0 +1,6 @@
+[alias]
+	ss = status -s
+	push-check-submodule = push --recurse-submodules=check
+[user]
+	email = linzhenyu@kingsoft.com
+	name = 林震宇
