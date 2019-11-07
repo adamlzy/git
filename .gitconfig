@@ -1,6 +1,8 @@
 [alias]
 	ss = status -s
 	push-check-submodule = push --recurse-submodules=check
+	pull-rebase = pull --rebase
+	submodule-update-with-rebase = submodule update --recursive --init --rebase
 [user]
 	email = linzhenyu@kingsoft.com
 	name = 林震宇
