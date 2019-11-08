@@ -3,6 +3,11 @@
 	push-check-submodule = push --recurse-submodules=check
 	pull-rebase = pull --rebase
 	submodule-update-with-rebase = submodule update --recursive --init --rebase
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	week-report = log --author=linzhenyu --since='5 days ago'
+	week-report-submodule = submodule foreach  git log --author=linzhenyu --since='5 days ago'
 [user]
 	email = linzhenyu@kingsoft.com
-	name = 林震宇
+	name = linzhenyu
+[merge]
+	tool = kdiff3
