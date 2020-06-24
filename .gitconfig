@@ -1,11 +1,18 @@
 [alias]
+	ap = add -p
+	au = add -u
+	cp= checkout -p
 	ss = status -s
+	si = show --ignore-all-space
+	dfi = diff --ignore-all-space
+	dfc = diff --cached --ignore-all-space
 	push-check-submodule = push --recurse-submodules=check
+	push-with-submodule = push --recurse-submodules=on-demand
 	pull-rebase = pull --rebase
-	submodule-update-with-rebase = submodule update --recursive --init --rebase
+	submodule-ith-rebase = submodule update --recursive --init --rebase
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
-	week-report = log --author=linzhenyu --since='5 days ago'
-	week-report-submodule = submodule foreach  git log --author=linzhenyu --since='5 days ago'
+	week-report = log --author=linzhenyu --since='last sat'
+	week-report-submodule = submodule foreach  git week-report
 [user]
 	email = linzhenyu@kingsoft.com
 	name = linzhenyu
